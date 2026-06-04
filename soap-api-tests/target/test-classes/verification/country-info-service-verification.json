@@ -1,0 +1,5 @@
+{
+      "description": "Verify the correct capital city is returned",
+      "xpath": "//CapitalCityResult/text()",
+      "expectedValue": "Warsaw"
+}

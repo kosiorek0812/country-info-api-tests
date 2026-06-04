@@ -1,0 +1,5 @@
+{
+  "Host": "webservices.oorsprong.org",
+  "Content-Type": "application/soap+xml; charset=utf-8",
+  "CountryISOCode": "PL"
+}
