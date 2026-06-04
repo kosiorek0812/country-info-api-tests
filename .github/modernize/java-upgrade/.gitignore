@@ -1,0 +1,11 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore local Maven artifacts and IDE clutter
+target/
+.classpath
+.project
+.settings/
+.idea/
+*.class
+*.log
