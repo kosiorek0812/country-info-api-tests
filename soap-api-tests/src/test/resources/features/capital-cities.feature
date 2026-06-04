@@ -7,6 +7,6 @@ Feature: Country Information Retrieval
   @smoke @capital_city
   Scenario: Retrieve the capital city using a valid country code
     Given I have a valid SOAP request for the capital city
-    And the country code is "PL"
+    And the country is Poland
     When I send the request to the service
-    Then the response contains the city "Warsaw"
+    Then the response contains the right data for Poland
