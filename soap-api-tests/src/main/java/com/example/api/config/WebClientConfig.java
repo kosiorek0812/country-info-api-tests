@@ -8,17 +8,14 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class WebClientConfig {
 
-    @Value("${api.base.url}")
-    private String baseUrl;
+  @Value("${api.base.url}")
+  private String baseUrl;
 
-    @Bean
-    public WebClient SoapWebClient() {
-        return WebClient.builder()
-            .baseUrl(baseUrl)
-            .defaultHeader("Content-Type", "text/xml; charset=utf-8")
-            .build();
-
-    }
-
-    
+  @Bean
+  public WebClient SoapWebClient() {
+    return WebClient.builder()
+        .baseUrl(baseUrl)
+        .defaultHeader("Content-Type", "text/xml; charset=utf-8")
+        .build();
+  }
 }

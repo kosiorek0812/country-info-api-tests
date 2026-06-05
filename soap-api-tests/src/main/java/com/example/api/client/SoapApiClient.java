@@ -7,20 +7,20 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Component
 public class SoapApiClient {
 
-    private final WebClient webClient;
+  private final WebClient webClient;
 
-    @Autowired
-    public SoapApiClient(WebClient soapApiClient) {
-        this.webClient = soapApiClient;
-    }
+  @Autowired
+  public SoapApiClient(WebClient soapApiClient) {
+    this.webClient = soapApiClient;
+  }
 
-    public String postSoapRequest(String endpoint, String xmlPayload) {
-        return webClient.post()
-            .uri(endpoint)
-            .bodyValue(xmlPayload)
-            .retrieve()
-            .bodyToMono(String.class)
-            .block();
-    }
-    
+  public String postSoapRequest(String endpoint, String xmlPayload) {
+    return webClient
+        .post()
+        .uri(endpoint)
+        .bodyValue(xmlPayload)
+        .retrieve()
+        .bodyToMono(String.class)
+        .block();
+  }
 }
