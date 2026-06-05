@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>qa-automation-workspace</artifactId>
+    <artifactId>country-info-api-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -16,9 +16,9 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring.version>6.1.4</spring.version>
+        <spring.version>6.1.8</spring.version>
         <cucumber.version>7.15.0</cucumber.version>
-        <jackson.version>2.16.1</jackson.version>
-        <xmlunit.version>2.9.1</xmlunit.version>
+        <jackson.version>2.17.0</jackson.version>
+        <xmlunit.version>2.10.0</xmlunit.version>
     </properties>
 </project>
