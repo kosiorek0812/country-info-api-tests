@@ -1,6 +1,9 @@
 # Ignore VS Code settings
 .vscode/
 
+# Ignore modernization helper scripts
+hooks/
+
 # Ignore local Maven artifacts and IDE clutter
 target/
 .classpath
