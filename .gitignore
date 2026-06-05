@@ -9,7 +9,11 @@
 .vscode/
 .idea/
 *.iml
+/.classpath
+/.project
+/.settings/
 
 # OS files
 .DS_Store
 Thumbs.db
+**/.DS_Store
